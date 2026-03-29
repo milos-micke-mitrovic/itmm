@@ -40,7 +40,7 @@ export function MarketingComingSoon() {
         <p className="text-sm font-medium text-marija-purple tracking-wider uppercase mb-2">
           {t("subheading")}
         </p>
-        <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6">
+        <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.2] mb-6">
           {t("heading")}
         </h1>
         <p className="text-[var(--text-secondary)] text-lg mb-10 leading-relaxed">

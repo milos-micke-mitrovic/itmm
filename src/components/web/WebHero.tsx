@@ -29,7 +29,7 @@ export function WebHero() {
         <p className="text-sm md:text-base text-milos-blue font-medium tracking-wider uppercase mb-4">
           {t("name")}
         </p>
-        <h1 className="font-[family-name:var(--font-display)] text-[clamp(2rem,8vw,4.5rem)] font-extrabold tracking-tight leading-[1.1] max-w-5xl">
+        <h1 className="font-[family-name:var(--font-display)] text-[clamp(2rem,8vw,4.5rem)] font-extrabold tracking-tight leading-[1.2] max-w-5xl">
           {t("headline")}{" "}
           <span className="inline-block relative">
             <AnimatePresence mode="wait">

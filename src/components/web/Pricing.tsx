@@ -22,6 +22,10 @@ export function Pricing() {
     title: string;
     plans: Array<{ name: string; price: string; description: string }>;
   };
+  const existing = t.raw("existing") as {
+    title: string;
+    plans: Array<{ name: string; price: string; description: string; for: string }>;
+  };
 
   const [showExtras, setShowExtras] = useState(false);
 
@@ -29,7 +33,7 @@ export function Pricing() {
     <section id="pricing" className="py-20 md:py-32 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-5xl font-bold tracking-tight text-center mb-16">
+          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-[3rem] font-bold tracking-tight leading-[1.3] text-center mb-16">
             {t("title")}
           </h2>
         </ScrollReveal>
@@ -47,7 +51,7 @@ export function Pricing() {
               >
                 {tier.popular && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-milos-blue to-milos-purple text-white">
-                    Popular
+                    {t("popular")}
                   </span>
                 )}
                 <h3 className="font-[family-name:var(--font-display)] text-xl font-bold">
@@ -90,7 +94,7 @@ export function Pricing() {
                       : "border border-[var(--border)] text-[var(--text-primary)] hover:bg-[var(--bg-tertiary)]"
                   }`}
                 >
-                  Get Started
+                  {t("getStarted")}
                 </a>
               </div>
             </ScrollReveal>
@@ -142,6 +146,36 @@ export function Pricing() {
         </ScrollReveal>
 
         {/* Hosting + Maintenance */}
+        {/* Existing site services */}
+        <ScrollReveal>
+          <div className="mt-16">
+            <h3 className="font-[family-name:var(--font-display)] text-2xl md:text-3xl font-bold leading-snug text-center mb-8">
+              {existing.title}
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {existing.plans.map((plan) => (
+                <div
+                  key={plan.name}
+                  className="rounded-xl border border-[var(--border)] bg-[var(--bg-secondary)] p-6 md:p-8 transition-all duration-300 hover:border-milos-blue/30 hover:-translate-y-1"
+                >
+                  <div className="flex items-center justify-between mb-3">
+                    <h4 className="font-[family-name:var(--font-display)] text-lg font-semibold">{plan.name}</h4>
+                    <span className="font-[family-name:var(--font-display)] text-2xl font-bold bg-gradient-to-r from-milos-blue to-milos-purple bg-clip-text text-transparent">
+                      {plan.price}
+                    </span>
+                  </div>
+                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
+                    {plan.description}
+                  </p>
+                  <p className="text-xs text-[var(--text-tertiary)] italic">
+                    {plan.for}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
+
         <div className="grid md:grid-cols-2 gap-6 mt-16">
           <ScrollReveal>
             <div>

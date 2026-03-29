@@ -1,17 +1,38 @@
 import { NextResponse } from "next/server";
 import { resend } from "@/lib/resend";
 import { getContactEmail } from "@/lib/contacts";
+import { rateLimit } from "@/lib/rate-limit";
+import { sanitize, isValidEmail } from "@/lib/sanitize";
+import { headers } from "next/headers";
 
 export async function POST(req: Request) {
   try {
+    // Rate limit: 5 submissions per minute per IP
+    const headersList = await headers();
+    const ip = headersList.get("x-forwarded-for")?.split(",")[0] || "unknown";
+    if (!rateLimit(ip, 5)) {
+      return NextResponse.json({ error: "Too many requests" }, { status: 429 });
+    }
+
     const body = await req.json();
-    const { name, email, phone, description, budget, source } = body;
+    const name = sanitize(body.name || "");
+    const email = sanitize(body.email || "");
+    const phone = sanitize(body.phone || "");
+    const description = sanitize(body.description || "");
+    const budget = sanitize(body.budget || "");
+    const source = body.source === "marketing" ? "marketing" : "web";
 
     if (!name || !email || !description) {
-      return NextResponse.json(
-        { error: "Name, email, and description are required" },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: "Name, email, and description are required" }, { status: 400 });
+    }
+
+    if (!isValidEmail(email)) {
+      return NextResponse.json({ error: "Invalid email" }, { status: 400 });
+    }
+
+    // Honeypot: if a hidden field is filled, it's a bot
+    if (body._honey) {
+      return NextResponse.json({ success: true }); // fake success
     }
 
     const isMarketing = source === "marketing";
@@ -25,6 +46,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: "ITMM Contact <onboarding@resend.dev>",
       to: contactEmail,
+      replyTo: email,
       subject: `New ${isMarketing ? "marketing" : "project"} inquiry from ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -40,9 +62,6 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true });
   } catch {
-    return NextResponse.json(
-      { error: "Failed to send message" },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "Failed to send message" }, { status: 500 });
   }
 }

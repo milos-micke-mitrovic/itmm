@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Syne, Inter } from "next/font/google";
+import { Outfit, Inter } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
@@ -9,7 +9,7 @@ import { notFound } from "next/navigation";
 import { locales } from "@/lib/i18n";
 import "@/app/globals.css";
 
-const syne = Syne({
+const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-syne",
   display: "swap",
@@ -63,7 +63,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${syne.variable} ${inter.variable} antialiased`}
+      className={`${outfit.variable} ${inter.variable} antialiased`}
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >

@@ -72,7 +72,7 @@ export function FAQ() {
     <section id="faq" className="py-20 md:py-32 px-4 md:px-6">
       <div className="max-w-3xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-5xl font-bold tracking-tight text-center mb-16">
+          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-[3rem] font-bold tracking-tight leading-[1.3] text-center mb-16">
             {t("title")}
           </h2>
         </ScrollReveal>

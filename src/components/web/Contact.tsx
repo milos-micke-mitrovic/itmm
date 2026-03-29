@@ -10,6 +10,7 @@ export function Contact() {
   const fields = t.raw("fields") as Record<string, string>;
   const budgetOptions = t.raw("budgetOptions") as string[];
 
+  const [honey, setHoney] = useState("");
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -26,7 +27,7 @@ export function Contact() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, source: "web" }),
+        body: JSON.stringify({ ...form, source: "web", _honey: honey }),
       });
       if (res.ok) {
         setStatus("success");
@@ -49,7 +50,7 @@ export function Contact() {
     <section id="contact" className="py-20 md:py-32 px-4 md:px-6">
       <div className="max-w-2xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-5xl font-bold tracking-tight text-center mb-16">
+          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-[3rem] font-bold tracking-tight leading-[1.3] text-center mb-16">
             {t("title")}
           </h2>
         </ScrollReveal>
@@ -97,6 +98,8 @@ export function Contact() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
+              {/* Honeypot — hidden from users, bots fill it */}
+              <input type="text" name="website" value={honey} onChange={(e) => setHoney(e.target.value)} className="absolute opacity-0 -z-10 h-0 w-0" tabIndex={-1} autoComplete="off" />
               <div className="grid sm:grid-cols-2 gap-4">
                 <input
                   type="text"

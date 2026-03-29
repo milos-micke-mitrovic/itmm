@@ -6,7 +6,7 @@ import { LangToggle } from "@/components/ui/LangToggle";
 import { useEffect, useState } from "react";
 import { useRouter } from "@/lib/navigation";
 
-const sections = ["work", "process", "pricing", "faq", "about", "contact"] as const;
+const sections = ["work", "process", "pricing", "faq", "testimonials", "about", "blog", "contact"] as const;
 
 export function WebNav() {
   const t = useTranslations("nav");
@@ -14,10 +14,15 @@ export function WebNav() {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+
+      // Scroll progress
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      setScrollProgress(total > 0 ? (window.scrollY / total) * 100 : 0);
 
       // Active section detection
       for (const id of [...sections].reverse()) {
@@ -44,31 +49,40 @@ export function WebNav() {
         scrolled ? "glass shadow-[0_1px_0_var(--glass-border)]" : ""
       }`}
     >
+      {/* Scroll progress bar */}
+      <div className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-milos-blue to-milos-purple transition-[width] duration-150" style={{ width: `${scrollProgress}%` }} />
+
       <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <button
-          onClick={() =>
-            router.push("/")
-          }
-          className="flex items-center gap-2 cursor-pointer"
-        >
-          <span className="font-[family-name:var(--font-display)] text-xl font-bold tracking-tight">
+        {/* Logo + world switcher */}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => router.push("/")}
+            className="font-[family-name:var(--font-display)] text-xl font-bold tracking-tight cursor-pointer"
+          >
             ITMM
-          </span>
-          <span className="text-xs text-milos-blue font-medium px-1.5 py-0.5 rounded border border-milos-blue/30 bg-milos-blue/10">
-            Web
-          </span>
-        </button>
+          </button>
+          <div className="flex items-center rounded-lg border border-[var(--border)] overflow-hidden text-xs font-medium">
+            <span className="px-2 py-1 bg-milos-blue/15 text-milos-blue">
+              Web
+            </span>
+            <button
+              onClick={() => router.push("/marketing")}
+              className="px-2 py-1 text-[var(--text-tertiary)] hover:text-marija-purple hover:bg-marija-purple/10 transition-colors cursor-pointer"
+            >
+              {t("switchToMarketing")}
+            </button>
+          </div>
+        </div>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-0.5">
           {sections.map((id) => (
             <button
               key={id}
               onClick={() => scrollTo(id)}
-              className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-200 cursor-pointer ${
+              className={`px-2.5 py-1.5 text-xs font-medium rounded-md transition-colors duration-200 cursor-pointer ${
                 active === id
-                  ? "text-milos-blue"
+                  ? "text-milos-blue bg-milos-blue/10"
                   : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-tertiary)]"
               }`}
             >
@@ -85,7 +99,7 @@ export function WebNav() {
           </div>
           <button
             onClick={() => scrollTo("contact")}
-            className="hidden md:inline-flex px-4 py-2 rounded-lg bg-gradient-to-r from-milos-blue to-milos-purple text-white text-sm font-medium transition-all duration-200 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] cursor-pointer"
+            className="hidden md:inline-flex px-4 py-2 rounded-lg bg-gradient-to-r from-milos-blue to-milos-purple text-white text-xs font-medium transition-all duration-200 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] cursor-pointer"
           >
             {t("getQuote")}
           </button>
@@ -93,28 +107,14 @@ export function WebNav() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden w-9 h-9 flex items-center justify-center cursor-pointer"
+            className="lg:hidden w-9 h-9 flex items-center justify-center cursor-pointer"
             aria-label="Toggle menu"
           >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={1.5}
-            >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               {menuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 9h16.5m-16.5 6.75h16.5"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
               )}
             </svg>
           </button>
@@ -123,7 +123,7 @@ export function WebNav() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden glass border-t border-[var(--glass-border)] animate-fade-in">
+        <div className="lg:hidden glass border-t border-[var(--glass-border)] animate-fade-in">
           <div className="px-4 py-4 space-y-1">
             {sections.map((id) => (
               <button
@@ -138,6 +138,14 @@ export function WebNav() {
                 {t(id)}
               </button>
             ))}
+            <div className="pt-2 border-t border-[var(--border)]">
+              <button
+                onClick={() => { router.push("/marketing"); setMenuOpen(false); }}
+                className="block w-full text-left px-3 py-2.5 text-sm font-medium text-marija-purple cursor-pointer"
+              >
+                → {t("switchToMarketing")}
+              </button>
+            </div>
             <div className="flex items-center gap-2 pt-2 border-t border-[var(--border)]">
               <LangToggle />
               <ThemeToggle />

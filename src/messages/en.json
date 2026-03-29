@@ -12,14 +12,41 @@
     "process": "Process",
     "pricing": "Pricing",
     "faq": "FAQ",
+    "testimonials": "Testimonials",
     "about": "About",
+    "blog": "Blog",
     "contact": "Contact",
     "getQuote": "Get a Quote",
-    "backToHome": "Back to home"
+    "backToHome": "Back to home",
+    "switchToMarketing": "Marketing",
+    "switchToWeb": "Web"
   },
   "landing": {
-    "headline": "We Put Businesses on the Map",
+    "headline": "We Put Businesses on the",
+    "headlineAccent": "Map",
     "subline": "Two specialists. One brand. Your complete digital presence.",
+    "why": {
+      "title": "Why It Matters",
+      "items": [
+        {
+          "title": "Your Customers Are Online",
+          "text": "Over 80% of people search online before making a purchase. If you're not there, your competitor is."
+        },
+        {
+          "title": "A Website Works 24/7",
+          "text": "Unlike a storefront, your website never closes. It answers questions, shows your work, and brings in leads while you sleep."
+        },
+        {
+          "title": "Social Media Isn't Enough",
+          "text": "Instagram can disappear tomorrow. A website is yours. A real digital address that you own and control."
+        }
+      ]
+    },
+    "choose": "Pick your path",
+    "both": {
+      "text": "Need both? A website and a marketing strategy work best together.",
+      "cta": "Contact us for a combined package"
+    },
     "door1": {
       "name": "Milos Mitrovic",
       "title": "Web Development",
@@ -51,7 +78,8 @@
       "error": "Something went wrong. Try again."
     },
     "footer": {
-      "copyright": "© ITMM 2025"
+      "copyright": "© ITMM 2026",
+      "tagline": "Your Business. Online. Finally."
     }
   },
   "web": {
@@ -175,7 +203,26 @@
           "Multilingual support (+€100–200)"
         ]
       },
+      "popular": "Popular",
+      "getStarted": "Get Started",
       "scope": "Every project starts with a clear written agreement — you know exactly what's included before we begin. The price covers everything defined upfront. Changes outside the original scope are charged separately — fair to you, fair to me. Revisions mean small adjustments, not changing direction entirely.",
+      "existing": {
+        "title": "Already Have a Website?",
+        "plans": [
+          {
+            "name": "Content Refresh",
+            "price": "€100",
+            "description": "Update texts, images, phone numbers, or prices. Includes checking that all changes display correctly on mobile and tablet.",
+            "for": "Quick fixes to keep your info current without changing the design."
+          },
+          {
+            "name": "Redesign & Upgrade",
+            "price": "€200",
+            "description": "Update colors, fonts, and layout. Full mobile optimization for the latest devices — everything responsive, clean, and easy to tap.",
+            "for": "Give your old site a modern look that works perfectly on every screen."
+          }
+        ]
+      },
       "hosting": {
         "title": "Hosting Packages",
         "plans": [
@@ -294,7 +341,7 @@
       "posts": [
         {
           "slug": "website-cost-2025",
-          "title": "How Much Does a Website Cost in 2025?",
+          "title": "How Much Does a Website Cost in 2026?",
           "excerpt": "The real answer isn't a number — it depends on what you need. Here's a clear breakdown so you know what to expect."
         },
         {
@@ -338,15 +385,26 @@
   "marketing": {
     "nav": {
       "services": "Services",
+      "process": "Process",
+      "faq": "FAQ",
+      "testimonials": "Testimonials",
       "about": "About",
       "credentials": "Credentials",
       "contact": "Contact",
       "getInTouch": "Get in Touch"
     },
+    "social": {
+      "stats": [
+        { "number": 50, "suffix": "+", "label": "brands managed" },
+        { "number": 500, "suffix": "+", "label": "posts created" },
+        { "number": 2000, "suffix": "+", "label": "followers on LinkedIn" }
+      ]
+    },
     "hero": {
       "name": "Marija Miletić",
       "title": "Digital Marketing",
-      "headline": "Your brand deserves to be seen",
+      "headline": "Your brand deserves to be",
+      "rotatingWords": ["seen", "heard", "remembered", "loved"],
       "subline": "Social media management, content creation, and digital marketing education — all in one place.",
       "ctaPrimary": "See What I Do",
       "ctaSecondary": "Get in Touch"
@@ -377,6 +435,76 @@
         {
           "title": "Facebook & Instagram Advertising",
           "description": "Targeted ad campaigns that reach the right people. From setup to optimization — I make sure your ad budget works hard and delivers real results."
+        }
+      ]
+    },
+    "process": {
+      "title": "How It Works",
+      "steps": [
+        {
+          "title": "Discovery",
+          "text": "We talk about your brand, goals, and audience. I learn what makes your business unique and where you want to go."
+        },
+        {
+          "title": "Strategy",
+          "text": "I build a tailored plan — content calendar, tone of voice, platform focus. You see the plan before anything goes live."
+        },
+        {
+          "title": "Execution",
+          "text": "Content gets created, scheduled, and published. I handle engagement, monitor performance, and adjust as needed."
+        },
+        {
+          "title": "Growth",
+          "text": "Monthly reports show what's working. We refine the strategy together and keep building your presence."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What platforms do you work with?",
+          "answer": "Primarily Instagram and Facebook, as they're the most effective for small businesses. I can also help with LinkedIn, TikTok, and Google Business Profile depending on your needs."
+        },
+        {
+          "question": "How much does social media management cost?",
+          "answer": "It depends on the scope — how many platforms, how many posts per week, whether you need ad management too. Let's talk about your needs and I'll give you a clear price."
+        },
+        {
+          "question": "Can I see results before committing long-term?",
+          "answer": "Absolutely. We can start with a one-month trial so you see exactly what you're getting. No long-term contracts required upfront."
+        },
+        {
+          "question": "Do you create the visuals too?",
+          "answer": "Yes. I design all graphics, write the copy, and handle the entire content production process. You just approve and I publish."
+        },
+        {
+          "question": "How often will you post?",
+          "answer": "Typically 3-5 times per week depending on the platform and your package. Quality over quantity — every post has a purpose."
+        },
+        {
+          "question": "What if I want to learn to do it myself?",
+          "answer": "That's exactly what my education service is for. I'll teach you the strategy, tools, and techniques through practical one-on-one sessions. You'll be independent in weeks."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What Clients Say",
+      "items": [
+        {
+          "quote": "Marija completely transformed our Instagram. We went from random posts to a real strategy, and the difference in engagement was visible within the first month.",
+          "name": "Ivana R.",
+          "type": "Beauty salon"
+        },
+        {
+          "quote": "I had no idea where to start with social media for my business. Marija made it simple, taught me the basics, and now I actually enjoy posting.",
+          "name": "Stefan P.",
+          "type": "Personal trainer"
+        },
+        {
+          "quote": "Professional, creative, and always on time. She treats my brand like it's her own. Couldn't ask for more.",
+          "name": "Milica D.",
+          "type": "Handmade jewelry"
         }
       ]
     },

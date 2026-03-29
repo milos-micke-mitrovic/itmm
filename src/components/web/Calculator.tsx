@@ -148,7 +148,7 @@ export function Calculator() {
     <section className="py-20 md:py-32 px-4 md:px-6 bg-[var(--bg-secondary)]">
       <div className="max-w-2xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-5xl font-bold tracking-tight text-center mb-4">
+          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-[3rem] font-bold tracking-tight leading-[1.3] text-center mb-4">
             {t("title")}
           </h2>
           <p className="text-center text-sm text-[var(--text-secondary)] mb-12">

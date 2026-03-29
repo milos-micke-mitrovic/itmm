@@ -36,8 +36,11 @@ export function LandingHero() {
           Web Development · Digital Marketing
         </motion.div>
 
-        <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] max-w-4xl">
-          {t("headline")}
+        <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.2] max-w-4xl">
+          {t("headline")}{" "}
+          <span className="bg-gradient-to-r from-milos-blue to-marija-purple bg-clip-text text-transparent">
+            {t("headlineAccent")}
+          </span>
         </h1>
         <motion.p
           className="mt-6 text-lg md:text-xl text-[var(--text-secondary)] max-w-xl mx-auto"

@@ -12,14 +12,41 @@
     "process": "Proces",
     "pricing": "Cene",
     "faq": "Pitanja",
+    "testimonials": "Utisci",
     "about": "O meni",
+    "blog": "Blog",
     "contact": "Kontakt",
     "getQuote": "Traži ponudu",
-    "backToHome": "Nazad na početnu"
+    "backToHome": "Nazad na početnu",
+    "switchToMarketing": "Marketing",
+    "switchToWeb": "Web"
   },
   "landing": {
-    "headline": "Stavljamo biznise na mapu",
+    "headline": "Stavljamo biznise na",
+    "headlineAccent": "mapu",
     "subline": "Dva specijalista. Jedan brend. Kompletno digitalno prisustvo.",
+    "why": {
+      "title": "Zašto je to bitno",
+      "items": [
+        {
+          "title": "Vaše mušterije su na internetu",
+          "text": "Preko 80% ljudi pretražuje onlajn pre nego što donese odluku. Ako vas nema, vaša konkurencija je tu."
+        },
+        {
+          "title": "Sajt radi 24/7",
+          "text": "Za razliku od radnje, vaš sajt nikad ne zatvara. Odgovara na pitanja, prikazuje vaš rad i donosi klijente dok spavate."
+        },
+        {
+          "title": "Društvene mreže nisu dovoljne",
+          "text": "Instagram može nestati sutra. Sajt je vaš. Prava digitalna adresa koju vi posedujete i kontrolišete."
+        }
+      ]
+    },
+    "choose": "Izaberite svoj put",
+    "both": {
+      "text": "Treba vam oboje? Sajt i marketing strategija najbolje funkcionišu zajedno.",
+      "cta": "Kontaktirajte nas za kombinovani paket"
+    },
     "door1": {
       "name": "Miloš Mitrović",
       "title": "Izrada sajtova",
@@ -51,7 +78,8 @@
       "error": "Nešto nije u redu. Pokušajte ponovo."
     },
     "footer": {
-      "copyright": "© ITMM 2025"
+      "copyright": "© ITMM 2026",
+      "tagline": "Vaš biznis. Online. Konačno."
     }
   },
   "web": {
@@ -175,7 +203,26 @@
           "Višejezična podrška (+€100–200)"
         ]
       },
+      "popular": "Popularan",
+      "getStarted": "Započni",
       "scope": "Svaki projekat počinje jasnim pisanim dogovorom — tačno znate šta je uključeno pre nego što počnemo. Cena pokriva sve što je definisano unapred. Promene van dogovorenog obima se dodatno naplaćuju — fer prema vama, fer prema meni. Izmene znače sitna podešavanja, ne potpunu promenu pravca.",
+      "existing": {
+        "title": "Već imate sajt?",
+        "plans": [
+          {
+            "name": "Osvežavanje sadržaja",
+            "price": "€100",
+            "description": "Zamena tekstova, slika, brojeva telefona ili cena. Uključuje proveru da novi sadržaj izgleda uredno na svim uređajima.",
+            "for": "Brze ispravke informacija bez menjanja izgleda sajta."
+          },
+          {
+            "name": "Redizajn i unapređenje",
+            "price": "€200",
+            "description": "Promena boja, fontova i rasporeda. Kompletno prilagođavanje sajta za najnovije modele telefona — pregledno i lako za kliktanje.",
+            "for": "Da vaš stari sajt ponovo izgleda moderno i privlačno na svakom ekranu."
+          }
+        ]
+      },
       "hosting": {
         "title": "Hosting paketi",
         "plans": [
@@ -294,7 +341,7 @@
       "posts": [
         {
           "slug": "website-cost-2025",
-          "title": "Koliko košta izrada sajta u 2025?",
+          "title": "Koliko košta izrada sajta u 2026?",
           "excerpt": "Pravi odgovor nije jedan broj — zavisi od toga šta vam treba. Evo jasnog pregleda da znate šta da očekujete."
         },
         {
@@ -338,15 +385,26 @@
   "marketing": {
     "nav": {
       "services": "Usluge",
+      "process": "Proces",
+      "faq": "Pitanja",
+      "testimonials": "Utisci",
       "about": "O meni",
       "credentials": "Sertifikati",
       "contact": "Kontakt",
       "getInTouch": "Javi se"
     },
+    "social": {
+      "stats": [
+        { "number": 50, "suffix": "+", "label": "brendova u saradnji" },
+        { "number": 500, "suffix": "+", "label": "kreiranih objava" },
+        { "number": 2000, "suffix": "+", "label": "pratilaca na LinkedIn-u" }
+      ]
+    },
     "hero": {
       "name": "Marija Miletić",
       "title": "Digitalni marketing",
-      "headline": "Vaš brend zaslužuje da bude viđen",
+      "headline": "Vaš brend zaslužuje da bude",
+      "rotatingWords": ["viđen", "zapamćen", "voljen", "svuda"],
       "subline": "Upravljanje mrežama, kreiranje sadržaja i edukacija o digitalnom marketingu — sve na jednom mestu.",
       "ctaPrimary": "Pogledaj usluge",
       "ctaSecondary": "Javi se"
@@ -377,6 +435,76 @@
         {
           "title": "Facebook i Instagram oglašavanje",
           "description": "Ciljane reklamne kampanje koje dopiru do pravih ljudi. Od podešavanja do optimizacije — brinem se da vaš budžet za reklame donosi stvarne rezultate."
+        }
+      ]
+    },
+    "process": {
+      "title": "Kako funkcioniše",
+      "steps": [
+        {
+          "title": "Upoznavanje",
+          "text": "Pričamo o vašem brendu, ciljevima i publici. Saznajem šta vaš biznis čini posebnim i gde želite da stignete."
+        },
+        {
+          "title": "Strategija",
+          "text": "Pravim plan po meri — kalendar sadržaja, ton komunikacije, fokus na platforme. Vidite plan pre nego što išta ode uživo."
+        },
+        {
+          "title": "Realizacija",
+          "text": "Sadržaj se kreira, zakazuje i objavljuje. Vodim komunikaciju sa publikom, pratim performanse i prilagođavam po potrebi."
+        },
+        {
+          "title": "Rast",
+          "text": "Mesečni izveštaji pokazuju šta funkcioniše. Zajedno usavršavamo strategiju i nastavljamo da gradimo vaše prisustvo."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Česta pitanja",
+      "items": [
+        {
+          "question": "Sa kojim platformama radite?",
+          "answer": "Prvenstveno Instagram i Facebook, jer su najefikasniji za male biznise. Mogu da pomognem i sa LinkedIn-om, TikTok-om i Google Business profilom u zavisnosti od vaših potreba."
+        },
+        {
+          "question": "Koliko košta vođenje društvenih mreža?",
+          "answer": "Zavisi od obima — koliko platformi, koliko objava nedeljno, da li je potrebno i upravljanje reklamama. Razgovarajmo o vašim potrebama i daću vam jasnu cenu."
+        },
+        {
+          "question": "Mogu li da vidim rezultate pre dugoročne obaveze?",
+          "answer": "Naravno. Možemo početi sa probnim mesecom da vidite tačno šta dobijate. Nema obaveznih dugoročnih ugovora na početku."
+        },
+        {
+          "question": "Da li vi pravite i vizuale?",
+          "answer": "Da. Dizajniram svu grafiku, pišem tekstove i vodim celokupnu produkciju sadržaja. Vi samo odobrite, ja objavljujem."
+        },
+        {
+          "question": "Koliko često objavljujete?",
+          "answer": "Obično 3-5 puta nedeljno, u zavisnosti od platforme i vašeg paketa. Kvalitet pre kvantiteta — svaka objava ima svoj cilj."
+        },
+        {
+          "question": "Šta ako želim da naučim da to radim sam/sama?",
+          "answer": "Upravo za to služi moja usluga edukacije. Naučiću vas strategiju, alate i tehnike kroz praktične individualne sesije. Bićete samostalni za nekoliko nedelja."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Šta kažu klijenti",
+      "items": [
+        {
+          "quote": "Marija je potpuno transformisala naš Instagram. Prešli smo sa nasumičnih objava na pravu strategiju, i razlika u interakciji bila je vidljiva već u prvom mesecu.",
+          "name": "Ivana R.",
+          "type": "Kozmetički salon"
+        },
+        {
+          "quote": "Nisam imao pojma odakle da počnem sa mrežama za svoj posao. Marija je sve pojednostavila, naučila me osnove, i sad uživam u objavljivanju.",
+          "name": "Stefan P.",
+          "type": "Personalni trener"
+        },
+        {
+          "quote": "Profesionalna, kreativna i uvek na vreme. Odnosi se prema mom brendu kao da je njen. Ne bih mogla da tražim više.",
+          "name": "Milica D.",
+          "type": "Ručno pravljen nakit"
         }
       ]
     },

@@ -7,7 +7,7 @@ export function SectionHeading({
 }) {
   return (
     <h2
-      className={`font-[family-name:var(--font-display)] text-3xl md:text-5xl font-bold tracking-tight text-[var(--text-primary)] ${className}`}
+      className={`font-[family-name:var(--font-display)] text-3xl md:text-[3rem] font-bold tracking-tight leading-[1.3] text-[var(--text-primary)] ${className}`}
     >
       {children}
     </h2>

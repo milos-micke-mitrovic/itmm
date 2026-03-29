@@ -22,7 +22,7 @@ export function WebFooter() {
               ITMM
             </span>
             <p className="text-xs text-[var(--text-tertiary)]">
-              Your Business. Online. Finally.
+              {t("tagline")}
             </p>
           </div>
 

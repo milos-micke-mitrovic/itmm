@@ -13,6 +13,13 @@ export function TwoDoors() {
 
   return (
     <section className="px-4 md:px-6 pb-20">
+      <div className="max-w-5xl mx-auto">
+        <ScrollReveal>
+          <p className="text-center text-sm font-medium text-[var(--text-tertiary)] uppercase tracking-widest mb-8">
+            {t("choose")}
+          </p>
+        </ScrollReveal>
+      </div>
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
         {/* Door 1 — Web Development */}
         <ScrollReveal>

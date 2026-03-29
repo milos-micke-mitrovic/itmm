@@ -18,22 +18,29 @@ export function Process() {
     <section id="process" className="py-20 md:py-32 px-4 md:px-6 bg-[var(--bg-secondary)]">
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-5xl font-bold tracking-tight text-center mb-16">
+          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-[3rem] font-bold tracking-tight leading-[1.3] text-center mb-16">
             {t("title")}
           </h2>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-4 gap-8 md:gap-6 relative">
-          {/* Connecting line (desktop) */}
-          <div className="hidden md:block absolute top-10 left-[12.5%] right-[12.5%] h-px overflow-hidden">
-            <div className="h-full w-full bg-gradient-to-r from-milos-blue/40 via-milos-purple/40 to-milos-blue/40" />
-          </div>
-
+        {/* Desktop: horizontal steps */}
+        <div className="hidden md:grid md:grid-cols-4 gap-0">
           {steps.map((step, i) => (
             <ScrollReveal key={i} delay={i * 120}>
-              <div className="group text-center relative rounded-xl p-6 transition-all duration-300 hover:bg-[var(--bg-tertiary)]">
-                <div className="w-16 h-16 mx-auto rounded-xl bg-gradient-to-br from-milos-blue/10 to-milos-purple/10 border border-milos-blue/20 flex items-center justify-center text-milos-blue mb-4 relative z-10 transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] group-hover:border-milos-blue/40">
-                  {icons[i]}
+              <div className="group text-center relative px-4">
+                {/* Icon row with connectors */}
+                <div className="flex items-center justify-center mb-4 relative">
+                  {/* Line before (except first) */}
+                  {i > 0 && (
+                    <div className="absolute right-1/2 mr-8 top-1/2 h-px w-full bg-gradient-to-r from-milos-blue/20 to-milos-purple/30 -translate-y-1/2" />
+                  )}
+                  {/* Line after (except last) */}
+                  {i < steps.length - 1 && (
+                    <div className="absolute left-1/2 ml-8 top-1/2 h-px w-full bg-gradient-to-r from-milos-purple/30 to-milos-blue/20 -translate-y-1/2" />
+                  )}
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-milos-blue/10 to-milos-purple/10 border border-milos-blue/20 flex items-center justify-center text-milos-blue relative z-10 bg-[var(--bg-secondary)] transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] group-hover:border-milos-blue/40">
+                    {icons[i]}
+                  </div>
                 </div>
                 <span className="inline-block text-xs font-bold text-milos-blue bg-milos-blue/10 px-2 py-0.5 rounded-full mb-3">
                   0{i + 1}
@@ -44,6 +51,33 @@ export function Process() {
                 <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
                   {step.text}
                 </p>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+
+        {/* Mobile: vertical steps */}
+        <div className="md:hidden space-y-8">
+          {steps.map((step, i) => (
+            <ScrollReveal key={i} delay={i * 100}>
+              <div className="flex gap-4">
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-milos-blue/10 to-milos-purple/10 border border-milos-blue/20 flex items-center justify-center text-milos-blue shrink-0">
+                    {icons[i]}
+                  </div>
+                  {i < steps.length - 1 && (
+                    <div className="w-px flex-1 mt-3 bg-gradient-to-b from-milos-blue/30 to-transparent" />
+                  )}
+                </div>
+                <div className="pb-4">
+                  <span className="text-xs font-bold text-milos-blue">0{i + 1}</span>
+                  <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                    {step.text}
+                  </p>
+                </div>
               </div>
             </ScrollReveal>
           ))}

@@ -5,8 +5,8 @@ export const contacts = {
     linkedin: "#", // TODO: add real LinkedIn URL
   },
   marija: {
-    email: "", // TODO: add Marija's email
-    whatsapp: "", // TODO: add Marija's phone
+    email: "marijamiletic993@gmail.com",
+    whatsapp: "+381637476901",
     linkedin: "https://www.linkedin.com/in/marija-mileti%C4%87-3107993/",
   },
 } as const;
