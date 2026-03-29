@@ -1,0 +1,425 @@
+{
+  "meta": {
+    "siteTitle": "ITMM — Vaš biznis. Online. Konačno.",
+    "siteDescription": "Profesionalni sajtovi i digitalni marketing za male biznise. Dva specijalista, jedan brend.",
+    "webTitle": "Izrada sajtova — ITMM",
+    "webDescription": "Brzi, moderni sajtovi za male biznise. Transparentne cene, jasni rokovi, bez nestajanja nakon isporuke.",
+    "marketingTitle": "Digitalni marketing — ITMM (Uskoro)",
+    "marketingDescription": "Upravljanje mrežama, kreiranje sadržaja i edukacija o digitalnom marketingu. Uskoro."
+  },
+  "nav": {
+    "work": "Radovi",
+    "process": "Proces",
+    "pricing": "Cene",
+    "faq": "Pitanja",
+    "about": "O meni",
+    "contact": "Kontakt",
+    "getQuote": "Traži ponudu",
+    "backToHome": "Nazad na početnu"
+  },
+  "landing": {
+    "headline": "Stavljamo biznise na mapu",
+    "subline": "Dva specijalista. Jedan brend. Kompletno digitalno prisustvo.",
+    "door1": {
+      "name": "Miloš Mitrović",
+      "title": "Izrada sajtova",
+      "bullets": [
+        "Profesionalni sajtovi koji rade",
+        "Brza izrada, isporuka na vreme",
+        "Transparentne cene, bez iznenađenja",
+        "Napravljeno za male biznise"
+      ],
+      "cta": "Uđi"
+    },
+    "door2": {
+      "name": "Marija Miletić",
+      "title": "Digitalni marketing",
+      "bullets": [
+        "Upravljanje društvenim mrežama",
+        "Kreiranje sadržaja i strategija",
+        "Vizuelni dizajn u Canva-i",
+        "Edukacija o mrežama"
+      ],
+      "cta": "Uđi"
+    },
+    "email": {
+      "heading": "Marijin svet se uskoro otvara.",
+      "sub": "Budite među prvima koji će saznati.",
+      "placeholder": "Vaš email",
+      "button": "Obavesti me",
+      "success": "Na listi ste!",
+      "error": "Nešto nije u redu. Pokušajte ponovo."
+    },
+    "footer": {
+      "copyright": "© ITMM 2025"
+    }
+  },
+  "web": {
+    "hero": {
+      "headline": "Pravim sajtove koji",
+      "rotatingWords": ["rade", "prodaju", "traju", "blistaju"],
+      "subline": "Brzi, moderni sajtovi za male biznise koji ozbiljno posluju.",
+      "ctaPrimary": "Pogledaj radove",
+      "ctaSecondary": "Traži ponudu",
+      "name": "Miloš Mitrović"
+    },
+    "social": {
+      "stats": [
+        { "number": 20, "suffix": "+", "label": "isporučenih sajtova" },
+        { "number": 7, "suffix": "", "label": "dana prosečna isporuka" },
+        { "number": 100, "suffix": "%", "label": "zadovoljnih klijenata" }
+      ]
+    },
+    "portfolio": {
+      "title": "Moji radovi",
+      "viewProject": "Pogledaj projekat",
+      "visitSite": "Poseti sajt",
+      "projects": [
+        {
+          "slug": "vrebaj-popust",
+          "name": "Vrebaj Popust",
+          "description": "Agregator popusta na sportsku opremu. Skrejpuje više prodavnica i prikazuje popuste od 50%+ na jednom mestu. Brz, automatizovan, uvek svež.",
+          "tags": ["Next.js", "Scraping", "Automation"],
+          "url": "https://vrebajpopust.rs"
+        },
+        {
+          "slug": "project-2",
+          "name": "Uskoro",
+          "description": "Novi projekat u izradi. Detalji stižu uskoro.",
+          "tags": [],
+          "url": "#"
+        },
+        {
+          "slug": "project-3",
+          "name": "Uskoro",
+          "description": "Novi projekat u izradi. Detalji stižu uskoro.",
+          "tags": [],
+          "url": "#"
+        }
+      ]
+    },
+    "process": {
+      "title": "Kako funkcioniše",
+      "steps": [
+        {
+          "title": "Dogovor",
+          "text": "Počinjemo razgovorom o tome šta vam treba. Onda to stavim na papir — prost dogovor koji definiše šta dobijate, do kad i za koliko. Bez skrivenih troškova, bez iznenađenja. Znate za šta plaćate pre nego što počnemo."
+        },
+        {
+          "title": "Dizajn",
+          "text": "Napravim dizajn koji odgovara vašem brendu i publici. Vidite ga pre nego što napišem prvu liniju koda. Vaše mišljenje oblikuje konačan izgled."
+        },
+        {
+          "title": "Izrada",
+          "text": "Gradim sajt sa čistim, modernim kodom. Brzo učitavanje, prilagođen mobilnim uređajima, spreman za pretraživače. Redovno vas obaveštavam o napretku — nema tišine."
+        },
+        {
+          "title": "Lansiranje",
+          "text": "Sajt ide uživo. Brinem se za hosting, podešavanje domena i da sve radi kako treba. I posle toga sam tu — jer isporuka ne znači nestajanje."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Transparentne cene",
+      "tiers": [
+        {
+          "name": "Basic",
+          "price": "€300",
+          "for": "Za frilensere, fotografe i majstore kojima treba profesionalno prisustvo na internetu.",
+          "features": [
+            "1–3 stranice",
+            "Kontakt forma",
+            "Prilagođeno mobilnim uređajima",
+            "Osnovno SEO podešavanje",
+            "Isporuka za 3–5 dana",
+            "1 runda izmena"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price": "€500",
+          "for": "Za male biznise, salone, restorane i trenere koji žele sledeći nivo.",
+          "popular": true,
+          "features": [
+            "Do 5 stranica",
+            "Sekcija za galeriju",
+            "Google Maps integracija",
+            "WhatsApp dugme",
+            "Osnovno SEO podešavanje",
+            "Isporuka za 7 dana",
+            "2 runde izmena"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "€800–€1000",
+          "for": "Za biznise koji žele da se istaknu i imaju potpunu kontrolu.",
+          "features": [
+            "Sve iz Standard paketa",
+            "CMS — sami menjate sadržaj",
+            "Blog sekcija",
+            "Animacije po meri",
+            "Napredni dizajn",
+            "Isporuka za 10–14 dana",
+            "2 runde izmena"
+          ]
+        }
+      ],
+      "extras": {
+        "title": "Šta utiče na cenu",
+        "items": [
+          "Dizajn logotipa (+€80–150)",
+          "Hitna isporuka ispod 3 dana (+30%)",
+          "Dodatne runde izmena (€30–50 po rundi)",
+          "Dodatne stranice van paketa (na upit)",
+          "Višejezična podrška (+€100–200)"
+        ]
+      },
+      "scope": "Svaki projekat počinje jasnim pisanim dogovorom — tačno znate šta je uključeno pre nego što počnemo. Cena pokriva sve što je definisano unapred. Promene van dogovorenog obima se dodatno naplaćuju — fer prema vama, fer prema meni. Izmene znače sitna podešavanja, ne potpunu promenu pravca.",
+      "hosting": {
+        "title": "Hosting paketi",
+        "plans": [
+          { "name": "Basic", "price": "€70/god", "description": "Deljeni hosting, SSL sertifikat, obnova uključena" },
+          { "name": "Standard", "price": "€130/god", "description": "Bolje performanse, mesečni backup, prioritetna podrška" },
+          { "name": "Premium", "price": "€220/god", "description": "Brz hosting, dnevni backupi, odgovor u roku od 24h" }
+        ]
+      },
+      "maintenance": {
+        "title": "Paketi održavanja",
+        "plans": [
+          { "name": "Basic Care", "price": "€30/mes", "description": "Mesečna ažuriranja, sigurnosna provera, backup" },
+          { "name": "Active Care", "price": "€60/mes", "description": "Sve iz Basic + do 1h sitnih izmena mesečno" },
+          { "name": "Full Care", "price": "€120/mes", "description": "Sve iz Active + do 3h izmena, mesečni izveštaj" }
+        ]
+      }
+    },
+    "calculator": {
+      "title": "Procenite svoj projekat",
+      "note": "Ovo je okvirna procena — kontaktirajte me za tačnu ponudu.",
+      "cta": "Traži tačnu ponudu",
+      "labels": {
+        "pages": "Broj stranica",
+        "gallery": "Galerija",
+        "contactForm": "Kontakt forma",
+        "maps": "Google Maps",
+        "whatsapp": "WhatsApp dugme",
+        "blog": "Blog sekcija",
+        "cms": "CMS — uređujete sadržaj sami",
+        "logo": "Dizajn logotipa",
+        "rush": "Hitna isporuka",
+        "hosting": "Hosting paket",
+        "maintenance": "Paket održavanja"
+      },
+      "options": {
+        "pages": ["1–3", "3–5", "5+"],
+        "yesNo": ["Ne", "Da"],
+        "hosting": ["Bez", "Basic (€70/god)", "Standard (€130/god)", "Premium (€220/god)"],
+        "maintenance": ["Bez", "Basic Care (€30/mes)", "Active Care (€60/mes)", "Full Care (€120/mes)"]
+      },
+      "result": "Procenjeni raspon"
+    },
+    "faq": {
+      "title": "Česta pitanja",
+      "items": [
+        {
+          "question": "Šta treba da obezbedim za početak?",
+          "answer": "Ne mnogo. Okvirnu ideju šta želite, tekstove ili slike koje biste stavili na sajt i pristup domenu ako ga imate. Ne brinite ako niste sigurni oko detalja — upravo je moj posao da to razrešim."
+        },
+        {
+          "question": "Koliko traje izrada sajta?",
+          "answer": "Osnovni sajtovi se rade za 3–5 dana. Standardni za otprilike nedelju dana. Veći projekti 10–14 dana. Rokovi počinju nakon što se dogovorimo oko svega i dobijem vaš sadržaj. Tačan rok ćete znati pre početka."
+        },
+        {
+          "question": "Mogu li sam da menjam sadržaj na sajtu?",
+          "answer": "Ako izaberete Pro paket — apsolutno. Dolazi sa CMS-om koji vam omogućava da sami menjate tekstove, slike i blog postove. Za Basic i Standard, izmene radim ja, bilo kroz uključene runde ili kroz paket održavanja."
+        },
+        {
+          "question": "Šta je hosting i da li vi to rešavate?",
+          "answer": "Hosting je prostor gde vaš sajt živi na internetu — zamislite to kao zakup mesta za vaš sajt. Da, ja se brinem za sve: podešavanje, SSL sertifikate, obnove. Ne morate da razmišljate o tome. Nudim tri paketa u zavisnosti od vaših potreba."
+        },
+        {
+          "question": "Šta ako mi se ne dopadne dizajn?",
+          "answer": "Dizajn vidite pre nego što napišem ijednu liniju koda. Razgovaramo, dajete povratne informacije, ja prilagođavam. Za to služe runde izmena. Nikada se nije desilo da klijent bude nezadovoljan krajnjim rezultatom jer komuniciramo tokom čitavog procesa."
+        },
+        {
+          "question": "Šta su izmene i koliko ih dobijem?",
+          "answer": "Izmene su korekcije nakon što vidite rezultat — promena boje, pomeranje sekcije, zamena slike. Basic uključuje 1 rundu, Standard i Pro po 2. Runda izmena nije redizajn — to je fino podešavanje. Dodatne runde koštaju €30–50 po rundi."
+        },
+        {
+          "question": "Šta ako želim promene posle isporuke?",
+          "answer": "Sitnice? Pišite mi, obično rešim brzo. Redovne promene? Za to postoje paketi održavanja. Potpuno nove funkcije ili sekcije? To dogovaramo kao mini-projekat sa jasnom cenom unapred."
+        },
+        {
+          "question": "Da li se bavite registracijom domena?",
+          "answer": "Mogu da vas provedem kroz kupovinu domena ili da ga registrujem u vaše ime. Domen je uvek vaš — nikada ne držim tuđi domen kao taoca. Godišnja cena domena je odvojena od mojih cena (obično €10–15/god za .com)."
+        },
+        {
+          "question": "Mogu li da dobijem račun?",
+          "answer": "Da, naravno. Za svaki projekat izdajem uredan račun. Sve čisto i zvanično."
+        },
+        {
+          "question": "Kako da počnemo saradnju?",
+          "answer": "Jednostavno. Pišite mi na WhatsApp ili popunite kontakt formu. Kažite okvirno šta vam treba. Javim se u roku od 24 sata sa pitanjima ili ponudom. Nema nikakve obaveze dok se oboje ne složimo oko obima i cene u pisanom obliku."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Šta kažu klijenti",
+      "items": [
+        {
+          "quote": "Miloš mi je isporučio fotografski portfolio za 5 dana. Čist dizajn, brz sajt, tačno onako kako sam zamislila. Najbolji deo? Zaista je slušao šta hoću umesto da gura svoje ideje.",
+          "name": "Ana K.",
+          "type": "Fotografski portfolio"
+        },
+        {
+          "quote": "Trebao mi je sajt za restoran ali nisam imao pojma odakle da počnem. Miloš je sve objasnio prosto, dao fer cenu, a rezultat izgleda bolje nego kod restorana koji su platili deset puta više za svoje sajtove.",
+          "name": "Dragan M.",
+          "type": "Sajt restorana"
+        },
+        {
+          "quote": "Ubedio me je jasan dogovor pre početka rada. Znao sam tačno za šta plaćam. Nijedan drugi frilenser sa kojim sam pričao nije ponudio takvu transparentnost. Sam sajt je tačno ono što je mom biznisu trebalo.",
+          "name": "Jelena S.",
+          "type": "Poslovni sajt"
+        }
+      ]
+    },
+    "about": {
+      "title": "Ko stoji iza ovoga",
+      "text": "Ja sam Miloš — počeo sam da pravim sajtove jer sam video koliko malih biznisa nema normalno prisustvo na internetu, a koliko je zapravo jednostavno to promeniti. Radim brzo, komuniciram jasno i ne nestajem nakon isporuke. Svaki projekat dobija istu pažnju, bio to sajt od jedne strane ili kompletan poslovni sajt. Verujem u fer cene, poštene rokove i da uradim tačno ono što sam obećao.",
+      "tools": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Figma", "Vercel", "Git"]
+    },
+    "blog": {
+      "title": "Saveti i uvidi",
+      "readMore": "Pročitaj više",
+      "posts": [
+        {
+          "slug": "website-cost-2025",
+          "title": "Koliko košta izrada sajta u 2025?",
+          "excerpt": "Pravi odgovor nije jedan broj — zavisi od toga šta vam treba. Evo jasnog pregleda da znate šta da očekujete."
+        },
+        {
+          "slug": "instagram-vs-website",
+          "title": "Instagram stranica ili pravi sajt — šta je bolje za vaš biznis?",
+          "excerpt": "Instagram je odličan za vidljivost. Ali nije vaš. Evo zašto vašem biznisu treba pravi dom na internetu."
+        },
+        {
+          "slug": "choose-domain-name",
+          "title": "Kako da izaberete pravi domen",
+          "excerpt": "Domen je vaša digitalna adresa. Neka bude kratak, pamtljiv i profesionalan. Evo pravila koja stvarno vrede."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Hajde da sarađujemo",
+      "fields": {
+        "name": "Ime",
+        "email": "Email",
+        "phone": "Telefon (opciono)",
+        "description": "Opišite ukratko svoj projekat",
+        "budget": "Okviran budžet"
+      },
+      "budgetOptions": ["Ispod €300", "€300–€500", "€500–€1000", "Nisam siguran/na"],
+      "submit": "Pošalji poruku",
+      "whatsapp": "Piši na WhatsApp",
+      "emailLabel": "Ili pošaljite email na",
+      "success": "Poruka je poslata! Javim se u roku od 24 sata.",
+      "error": "Nešto nije u redu. Probajte WhatsApp ili mi pošaljite email direktno."
+    },
+    "whatsapp": {
+      "tooltip": "Piši mi direktno",
+      "prefilled": "Zdravo Miloše, zanima me izrada sajta."
+    },
+    "notFound": {
+      "heading": "Zalutali u digitalnom prostoru",
+      "text": "Ova stranica ne postoji. Ali vaš budući sajt može.",
+      "cta": "Nazad na sigurno"
+    }
+  },
+  "marketing": {
+    "nav": {
+      "services": "Usluge",
+      "about": "O meni",
+      "credentials": "Sertifikati",
+      "contact": "Kontakt",
+      "getInTouch": "Javi se"
+    },
+    "hero": {
+      "name": "Marija Miletić",
+      "title": "Digitalni marketing",
+      "headline": "Vaš brend zaslužuje da bude viđen",
+      "subline": "Upravljanje mrežama, kreiranje sadržaja i edukacija o digitalnom marketingu — sve na jednom mestu.",
+      "ctaPrimary": "Pogledaj usluge",
+      "ctaSecondary": "Javi se"
+    },
+    "services": {
+      "title": "Šta radim",
+      "items": [
+        {
+          "title": "Upravljanje društvenim mrežama",
+          "description": "Preuzimam vaše mreže da biste vi mogli da se fokusirate na posao. Planiranje sadržaja, raspored objava, komunikacija sa publikom — sve profesionalno i dosledno."
+        },
+        {
+          "title": "Kreiranje sadržaja",
+          "description": "Vizuali i tekstovi koji zaustavljaju skrolovanje. Od Instagram objava do storija i rilsova — sadržaj koji gradi vaš brend i pokreće interakciju."
+        },
+        {
+          "title": "Vizuelni dizajn",
+          "description": "Profesionalna grafika za vaš brend koristeći Canva-u i moderne alate. Šabloni za mreže, brendiranje, prezentacije i marketinški materijali koji izgledaju profesionalno."
+        },
+        {
+          "title": "Edukacija o digitalnom marketingu",
+          "description": "Naučite da sami vodite svoje digitalno prisustvo. Individualni mentoring, radionice i praktična obuka o strategiji, sadržaju i osnovama onlajn marketinga."
+        },
+        {
+          "title": "Marketing strategija",
+          "description": "Jasan plan za vaše prisustvo na internetu. Analiziram vašu publiku, konkurenciju i ciljeve da napravim strategiju koja stvarno funkcioniše — ne samo teorija, već konkretni koraci."
+        },
+        {
+          "title": "Facebook i Instagram oglašavanje",
+          "description": "Ciljane reklamne kampanje koje dopiru do pravih ljudi. Od podešavanja do optimizacije — brinem se da vaš budžet za reklame donosi stvarne rezultate."
+        }
+      ]
+    },
+    "about": {
+      "title": "O meni",
+      "text": "Ja sam Marija — specijalista za digitalni marketing iz Beograda sa dugogodišnjim iskustvom u pomaganju biznisima da izgrade prisustvo na internetu. Verujem da svaki brend ima priču vrednu pričanja, a moj posao je da je pravi ljudi čuju. Kombinujem strategiju sa kreativnošću — bilo da vodim vaše mreže, pravim sadržaj koji povezuje ili vas učim kako da to sami radite. Radila sam sa malim biznisima, preduzetnicima i organizacijama, i u svaki projekat ulažem istu energiju i pažnju.",
+      "linkedin": "https://www.linkedin.com/in/marija-mileti%C4%87-3107993/"
+    },
+    "credentials": {
+      "title": "Sertifikati",
+      "items": [
+        {
+          "title": "Facebook oglašavanje, SEO i internet marketing",
+          "issuer": "Kapital Magazin",
+          "year": "2016"
+        },
+        {
+          "title": "Web dizajn i start-up projekat",
+          "issuer": "BEST Niš",
+          "year": "2017"
+        },
+        {
+          "title": "Community menadžer i mentor",
+          "issuer": "VP Tvoja šansa",
+          "year": "2017"
+        },
+        {
+          "title": "Engleski za upravljanje projektima",
+          "issuer": "Ambasada SAD u Beogradu",
+          "year": "2024"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Hajde da sarađujemo",
+      "text": "Imate projekat na umu ili želite da saznate više o tome šta mogu da uradim za vaš brend? Javite se — rado ću da čujem.",
+      "emailPlaceholder": "Vaš email",
+      "namePlaceholder": "Vaše ime",
+      "messagePlaceholder": "Opišite svoj projekat",
+      "submit": "Pošalji poruku",
+      "success": "Poruka je poslata! Javim se uskoro.",
+      "error": "Nešto nije u redu. Probajte da me kontaktirate preko LinkedIn-a."
+    },
+    "backToHome": "Nazad na početnu"
+  }
+}

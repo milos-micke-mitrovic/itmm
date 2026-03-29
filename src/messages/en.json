@@ -1,0 +1,425 @@
+{
+  "meta": {
+    "siteTitle": "ITMM — Your Business. Online. Finally.",
+    "siteDescription": "Professional websites and digital marketing for small businesses. Two specialists, one brand.",
+    "webTitle": "Web Development — ITMM",
+    "webDescription": "Fast, modern websites for small businesses. Transparent pricing, clear timelines, no disappearing after delivery.",
+    "marketingTitle": "Digital Marketing — ITMM (Coming Soon)",
+    "marketingDescription": "Social media management, content creation, and digital marketing education. Launching soon."
+  },
+  "nav": {
+    "work": "Work",
+    "process": "Process",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "about": "About",
+    "contact": "Contact",
+    "getQuote": "Get a Quote",
+    "backToHome": "Back to home"
+  },
+  "landing": {
+    "headline": "We Put Businesses on the Map",
+    "subline": "Two specialists. One brand. Your complete digital presence.",
+    "door1": {
+      "name": "Milos Mitrovic",
+      "title": "Web Development",
+      "bullets": [
+        "Professional websites that work",
+        "Built fast, delivered on time",
+        "Transparent pricing, no surprises",
+        "Made for small businesses"
+      ],
+      "cta": "Enter"
+    },
+    "door2": {
+      "name": "Marija Miletić",
+      "title": "Digital Marketing",
+      "bullets": [
+        "Social media management",
+        "Content creation & strategy",
+        "Visual design with Canva",
+        "Social media education"
+      ],
+      "cta": "Enter"
+    },
+    "email": {
+      "heading": "Marija's world is launching soon.",
+      "sub": "Be the first to know.",
+      "placeholder": "Your email",
+      "button": "Notify Me",
+      "success": "You're on the list!",
+      "error": "Something went wrong. Try again."
+    },
+    "footer": {
+      "copyright": "© ITMM 2025"
+    }
+  },
+  "web": {
+    "hero": {
+      "headline": "I build websites that",
+      "rotatingWords": ["work", "convert", "impress", "last"],
+      "subline": "Fast, modern websites for small businesses that mean business.",
+      "ctaPrimary": "See My Work",
+      "ctaSecondary": "Get a Quote",
+      "name": "Milos Mitrovic"
+    },
+    "social": {
+      "stats": [
+        { "number": 20, "suffix": "+", "label": "websites delivered" },
+        { "number": 7, "suffix": "", "label": "day avg. delivery" },
+        { "number": 100, "suffix": "%", "label": "client satisfaction" }
+      ]
+    },
+    "portfolio": {
+      "title": "My Work",
+      "viewProject": "View Project",
+      "visitSite": "Visit Site",
+      "projects": [
+        {
+          "slug": "vrebaj-popust",
+          "name": "Vrebaj Popust",
+          "description": "Sportswear discount aggregator. Scrapes multiple stores and surfaces 50%+ deals in one place. Fast, automated, always fresh.",
+          "tags": ["Next.js", "Scraping", "Automation"],
+          "url": "https://vrebajpopust.rs"
+        },
+        {
+          "slug": "project-2",
+          "name": "Coming Soon",
+          "description": "New project in the works. Details dropping soon.",
+          "tags": [],
+          "url": "#"
+        },
+        {
+          "slug": "project-3",
+          "name": "Coming Soon",
+          "description": "New project in the works. Details dropping soon.",
+          "tags": [],
+          "url": "#"
+        }
+      ]
+    },
+    "process": {
+      "title": "How It Works",
+      "steps": [
+        {
+          "title": "Agreement",
+          "text": "We start with a clear conversation about what you need. Then I write it down — a simple agreement that defines exactly what you're getting, when, and for how much. No hidden costs, no surprises. You know what you're paying for before we begin."
+        },
+        {
+          "title": "Design",
+          "text": "I create a design that fits your brand and your audience. You see it before a single line of code is written. Your feedback shapes the final look."
+        },
+        {
+          "title": "Build",
+          "text": "I build your site with clean, modern code. Fast loading, mobile responsive, SEO ready. You get progress updates throughout — no radio silence."
+        },
+        {
+          "title": "Launch",
+          "text": "Your site goes live. I handle hosting, domain setup, and make sure everything works perfectly. Then I stick around — because delivery isn't disappearing."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Transparent Pricing",
+      "tiers": [
+        {
+          "name": "Basic",
+          "price": "€300",
+          "for": "For freelancers, photographers, and craftsmen who need a professional online presence.",
+          "features": [
+            "1–3 pages",
+            "Contact form",
+            "Mobile responsive",
+            "Basic SEO setup",
+            "3–5 days delivery",
+            "1 round of revisions"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price": "€500",
+          "for": "For small businesses, salons, restaurants, and coaches ready to level up.",
+          "popular": true,
+          "features": [
+            "Up to 5 pages",
+            "Gallery section",
+            "Google Maps integration",
+            "WhatsApp button",
+            "Basic SEO",
+            "7 days delivery",
+            "2 rounds of revisions"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "€800–€1000",
+          "for": "For businesses that want to stand out and have full control.",
+          "features": [
+            "Everything in Standard",
+            "CMS — edit content yourself",
+            "Blog section",
+            "Custom animations",
+            "Advanced design",
+            "10–14 days delivery",
+            "2 rounds of revisions"
+          ]
+        }
+      ],
+      "extras": {
+        "title": "What Affects the Price",
+        "items": [
+          "Custom logo design (+€80–150)",
+          "Rush delivery under 3 days (+30%)",
+          "Extra revision rounds (€30–50 per round)",
+          "Additional pages beyond tier limit (on request)",
+          "Multilingual support (+€100–200)"
+        ]
+      },
+      "scope": "Every project starts with a clear written agreement — you know exactly what's included before we begin. The price covers everything defined upfront. Changes outside the original scope are charged separately — fair to you, fair to me. Revisions mean small adjustments, not changing direction entirely.",
+      "hosting": {
+        "title": "Hosting Packages",
+        "plans": [
+          { "name": "Basic", "price": "€70/year", "description": "Shared hosting, SSL, renewals handled" },
+          { "name": "Standard", "price": "€130/year", "description": "Better performance, monthly backup, priority support" },
+          { "name": "Premium", "price": "€220/year", "description": "Fast hosting, daily backups, 24h response time" }
+        ]
+      },
+      "maintenance": {
+        "title": "Maintenance Packages",
+        "plans": [
+          { "name": "Basic Care", "price": "€30/month", "description": "Monthly updates, security check, backup" },
+          { "name": "Active Care", "price": "€60/month", "description": "Everything + up to 1h small changes/month" },
+          { "name": "Full Care", "price": "€120/month", "description": "Everything + up to 3h changes, monthly report" }
+        ]
+      }
+    },
+    "calculator": {
+      "title": "Estimate Your Project",
+      "note": "This is an estimate — contact me for an exact quote.",
+      "cta": "Get an Exact Quote",
+      "labels": {
+        "pages": "Number of pages",
+        "gallery": "Gallery",
+        "contactForm": "Contact form",
+        "maps": "Google Maps",
+        "whatsapp": "WhatsApp button",
+        "blog": "Blog section",
+        "cms": "CMS — edit content yourself",
+        "logo": "Logo design",
+        "rush": "Rush delivery",
+        "hosting": "Hosting package",
+        "maintenance": "Maintenance package"
+      },
+      "options": {
+        "pages": ["1–3", "3–5", "5+"],
+        "yesNo": ["No", "Yes"],
+        "hosting": ["None", "Basic (€70/yr)", "Standard (€130/yr)", "Premium (€220/yr)"],
+        "maintenance": ["None", "Basic Care (€30/mo)", "Active Care (€60/mo)", "Full Care (€120/mo)"]
+      },
+      "result": "Estimated range"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What do I need to provide to get started?",
+          "answer": "Not much. A rough idea of what you want, any text or images you'd like on the site, and access to your domain if you have one. Don't worry if you're not sure about details — that's literally my job to figure out."
+        },
+        {
+          "question": "How long does it take to build my site?",
+          "answer": "Basic sites take 3–5 days. Standard ones about a week. Larger projects 10–14 days. These timelines start after we agree on everything and I have your content. I'll give you an exact timeline before we start."
+        },
+        {
+          "question": "Can I edit the site myself after delivery?",
+          "answer": "If you go with the Pro tier, absolutely — it comes with a CMS that lets you update text, images, and blog posts yourself. For Basic and Standard, I handle changes for you, either included in your revision rounds or through a maintenance package."
+        },
+        {
+          "question": "What is hosting and do you handle it?",
+          "answer": "Hosting is where your website lives on the internet — think of it as renting space for your site. Yes, I handle everything: setup, SSL certificates, renewals. You don't need to think about it. I offer three hosting packages depending on your needs."
+        },
+        {
+          "question": "What if I don't like the design?",
+          "answer": "You see the design before I write any code. We discuss it, you give feedback, and I adjust. That's what the revision rounds are for. I've never had a client unhappy with the final result because we communicate throughout the process."
+        },
+        {
+          "question": "What are revisions and how many do I get?",
+          "answer": "Revisions are adjustments after you see the result — changing a color, moving a section, swapping an image. Basic includes 1 round, Standard and Pro include 2. A revision round is not a redesign — it's fine-tuning. Extra rounds are €30–50 each."
+        },
+        {
+          "question": "What happens if I want changes after the site is delivered?",
+          "answer": "Small things? Message me, I'll usually sort it out quickly. Ongoing changes? That's what the maintenance packages are for. Completely new features or sections? We scope it like a mini-project with a clear price upfront."
+        },
+        {
+          "question": "Do you handle domain registration?",
+          "answer": "I can guide you through buying a domain or do it on your behalf. The domain is always yours — I never hold a client's domain hostage. Annual domain cost is separate from my pricing (usually €10–15/year for .com)."
+        },
+        {
+          "question": "Can I get an invoice?",
+          "answer": "Yes, absolutely. I provide a proper invoice for every project. Everything clean and official."
+        },
+        {
+          "question": "How do we start working together?",
+          "answer": "Simple. Message me on WhatsApp or fill out the contact form. Tell me roughly what you need. I'll get back to you within 24 hours with questions or a quote. No commitment until we both agree on the scope and price in writing."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What Clients Say",
+      "items": [
+        {
+          "quote": "Milos delivered my photography portfolio in 5 days. Clean design, fast site, exactly what I described. Best part? He actually listened to what I wanted instead of pushing his own ideas.",
+          "name": "Ana K.",
+          "type": "Photographer portfolio"
+        },
+        {
+          "quote": "I needed a website for my restaurant but had no idea where to start. Milos explained everything simply, gave me a fair price, and the result looks better than restaurants charging ten times more for their sites.",
+          "name": "Dragan M.",
+          "type": "Restaurant website"
+        },
+        {
+          "quote": "What convinced me was the clear agreement before starting. I knew exactly what I was paying for. No other freelancer I talked to offered that kind of transparency. The site itself is exactly what my business needed.",
+          "name": "Jelena S.",
+          "type": "Craftsman business site"
+        }
+      ]
+    },
+    "about": {
+      "title": "Who's Behind This",
+      "text": "I'm Milos — I started building websites because I saw how many small businesses had no proper online presence, and how simple it can be to change that. I work fast, communicate clearly, and I don't disappear after delivery. Every project gets the same attention whether it's a one-page portfolio or a full business site. I believe in fair pricing, honest timelines, and doing exactly what I said I would do.",
+      "tools": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Figma", "Vercel", "Git"]
+    },
+    "blog": {
+      "title": "Tips & Insights",
+      "readMore": "Read More",
+      "posts": [
+        {
+          "slug": "website-cost-2025",
+          "title": "How Much Does a Website Cost in 2025?",
+          "excerpt": "The real answer isn't a number — it depends on what you need. Here's a clear breakdown so you know what to expect."
+        },
+        {
+          "slug": "instagram-vs-website",
+          "title": "Instagram Page vs. Real Website — What's Better for Your Business?",
+          "excerpt": "Instagram is great for visibility. But it's not yours. Here's why your business needs a real home on the internet."
+        },
+        {
+          "slug": "choose-domain-name",
+          "title": "How to Choose the Right Domain Name",
+          "excerpt": "Your domain is your digital address. Keep it short, memorable, and professional. Here are the rules that actually matter."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Let's Work Together",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone (optional)",
+        "description": "Tell me about your project",
+        "budget": "Budget range"
+      },
+      "budgetOptions": ["Under €300", "€300–€500", "€500–€1000", "Not sure"],
+      "submit": "Send Message",
+      "whatsapp": "Message on WhatsApp",
+      "emailLabel": "Or email me at",
+      "success": "Message sent! I'll get back to you within 24 hours.",
+      "error": "Something went wrong. Try WhatsApp or email me directly."
+    },
+    "whatsapp": {
+      "tooltip": "Message me directly",
+      "prefilled": "Hi Milos, I'm interested in getting a website built."
+    },
+    "notFound": {
+      "heading": "Lost in the digital void",
+      "text": "This page doesn't exist. But your future website could.",
+      "cta": "Back to safety"
+    }
+  },
+  "marketing": {
+    "nav": {
+      "services": "Services",
+      "about": "About",
+      "credentials": "Credentials",
+      "contact": "Contact",
+      "getInTouch": "Get in Touch"
+    },
+    "hero": {
+      "name": "Marija Miletić",
+      "title": "Digital Marketing",
+      "headline": "Your brand deserves to be seen",
+      "subline": "Social media management, content creation, and digital marketing education — all in one place.",
+      "ctaPrimary": "See What I Do",
+      "ctaSecondary": "Get in Touch"
+    },
+    "services": {
+      "title": "What I Do",
+      "items": [
+        {
+          "title": "Social Media Management",
+          "description": "I take over your social media so you can focus on your business. Content planning, posting schedule, audience engagement — all handled professionally and consistently."
+        },
+        {
+          "title": "Content Creation",
+          "description": "Scroll-stopping visuals and copy that speaks to your audience. From Instagram posts to stories and reels — content that builds your brand and drives engagement."
+        },
+        {
+          "title": "Visual Design",
+          "description": "Professional graphics for your brand using Canva and modern design tools. Social media templates, brand kits, presentations, and marketing materials that look polished."
+        },
+        {
+          "title": "Digital Marketing Education",
+          "description": "Learn to manage your own digital presence. One-on-one mentoring, workshops, and practical training on social media strategy, content creation, and online marketing basics."
+        },
+        {
+          "title": "Marketing Strategy",
+          "description": "A clear roadmap for your online presence. I analyze your audience, competitors, and goals to create a strategy that actually works — not just theory, but actionable steps."
+        },
+        {
+          "title": "Facebook & Instagram Advertising",
+          "description": "Targeted ad campaigns that reach the right people. From setup to optimization — I make sure your ad budget works hard and delivers real results."
+        }
+      ]
+    },
+    "about": {
+      "title": "About Me",
+      "text": "I'm Marija — a digital marketing specialist based in Belgrade with years of experience helping businesses build their online presence. I believe every brand has a story worth telling, and my job is to make sure the right people hear it. I combine strategy with creativity — whether it's managing your social media, creating content that connects, or teaching you how to do it yourself. I've worked with small businesses, entrepreneurs, and organizations, and I bring the same energy and attention to every project.",
+      "linkedin": "https://www.linkedin.com/in/marija-mileti%C4%87-3107993/"
+    },
+    "credentials": {
+      "title": "Credentials",
+      "items": [
+        {
+          "title": "Facebook Advertising, SEO & Internet Marketing",
+          "issuer": "Kapital Magazin",
+          "year": "2016"
+        },
+        {
+          "title": "Web Design and Start-Up Project",
+          "issuer": "BEST Niš",
+          "year": "2017"
+        },
+        {
+          "title": "Community Manager & Mentor",
+          "issuer": "VP Tvoja šansa",
+          "year": "2017"
+        },
+        {
+          "title": "English for Project Management",
+          "issuer": "U.S. Embassy in Belgrade",
+          "year": "2024"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Let's Work Together",
+      "text": "Have a project in mind or want to learn more about what I can do for your brand? Reach out — I'd love to hear from you.",
+      "emailPlaceholder": "Your email",
+      "namePlaceholder": "Your name",
+      "messagePlaceholder": "Tell me about your project",
+      "submit": "Send Message",
+      "success": "Message sent! I'll get back to you soon.",
+      "error": "Something went wrong. Try reaching me on LinkedIn."
+    },
+    "backToHome": "Back to home"
+  }
+}
