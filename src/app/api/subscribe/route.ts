@@ -9,9 +9,14 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Email required" }, { status: 400 });
     }
 
+    if (!resend || !process.env.RESEND_AUDIENCE_ID) {
+      console.log("Resend not configured. Subscription:", email);
+      return NextResponse.json({ success: true });
+    }
+
     await resend.contacts.create({
       email,
-      audienceId: process.env.RESEND_AUDIENCE_ID || "",
+      audienceId: process.env.RESEND_AUDIENCE_ID,
     });
 
     return NextResponse.json({ success: true });

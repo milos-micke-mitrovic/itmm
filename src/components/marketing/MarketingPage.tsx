@@ -241,7 +241,7 @@ function MarketingContact() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: form.name, email: form.email, description: form.message, budget: "Marketing inquiry" }),
+        body: JSON.stringify({ name: form.name, email: form.email, description: form.message, budget: "Marketing inquiry", source: "marketing" }),
       });
       if (res.ok) { setStatus("success"); setForm({ name: "", email: "", message: "" }); }
       else setStatus("error");

@@ -1,11 +1,11 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { contacts } from "@/lib/contacts";
 
 export function WhatsAppFloat() {
   const t = useTranslations("web.whatsapp");
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+381XXXXXXXXX";
-  const url = `https://wa.me/${whatsappNumber.replace(/\+/g, "")}?text=${encodeURIComponent(t("prefilled"))}`;
+  const url = `https://wa.me/${contacts.milos.whatsapp.replace(/\+/g, "")}?text=${encodeURIComponent(t("prefilled"))}`;
 
   return (
     <a

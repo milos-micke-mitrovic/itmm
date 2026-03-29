@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { useState } from "react";
+import { contacts } from "@/lib/contacts";
 
 export function Contact() {
   const t = useTranslations("web.contact");
@@ -25,7 +26,7 @@ export function Contact() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, source: "web" }),
       });
       if (res.ok) {
         setStatus("success");
@@ -38,9 +39,8 @@ export function Contact() {
     }
   };
 
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+381XXXXXXXXX";
   const whatsappText = useTranslations("web.whatsapp")("prefilled");
-  const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\+/g, "")}?text=${encodeURIComponent(whatsappText)}`;
+  const whatsappUrl = `https://wa.me/${contacts.milos.whatsapp.replace(/\+/g, "")}?text=${encodeURIComponent(whatsappText)}`;
 
   const inputClasses =
     "w-full px-4 py-3 rounded-lg bg-[var(--bg-secondary)] border border-[var(--border)] text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] focus:outline-none focus:border-milos-blue/50 transition-colors text-sm";
@@ -71,10 +71,10 @@ export function Contact() {
           <div className="text-center text-sm text-[var(--text-tertiary)] mb-8">
             {t("emailLabel")}{" "}
             <a
-              href="mailto:milos.micke.mitrovic@gmail.com"
+              href={`mailto:${contacts.milos.email}`}
               className="text-milos-blue hover:underline"
             >
-              milos.micke.mitrovic@gmail.com
+              {contacts.milos.email}
             </a>
           </div>
 
