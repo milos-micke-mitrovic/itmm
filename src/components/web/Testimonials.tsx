@@ -2,12 +2,14 @@
 
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import Image from "next/image";
 
 export function Testimonials() {
   const t = useTranslations("web.testimonials");
   const items = t.raw("items") as Array<{
     quote: string;
     name: string;
+    image?: string;
     type: string;
   }>;
 
@@ -42,9 +44,15 @@ export function Testimonials() {
                   &ldquo;{item.quote}&rdquo;
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-gradient-to-br from-milos-blue to-milos-purple flex items-center justify-center text-white text-xs font-bold">
-                    {item.name.charAt(0)}
-                  </div>
+                  {item.image ? (
+                    <div className="w-9 h-9 rounded-full overflow-hidden relative shrink-0">
+                      <Image src={item.image} alt={item.name} fill className="object-cover" sizes="36px" />
+                    </div>
+                  ) : (
+                    <div className="w-9 h-9 rounded-full bg-gradient-to-br from-milos-blue to-milos-purple flex items-center justify-center text-white text-xs font-bold shrink-0">
+                      {item.name.charAt(0)}
+                    </div>
+                  )}
                   <div>
                     <p className="font-semibold text-sm">{item.name}</p>
                     <p className="text-xs text-[var(--text-tertiary)]">{item.type}</p>

@@ -57,19 +57,19 @@ export function Process() {
         </div>
 
         {/* Mobile: vertical steps */}
-        <div className="md:hidden space-y-8">
+        <div className="md:hidden">
           {steps.map((step, i) => (
             <ScrollReveal key={i} delay={i * 100}>
               <div className="flex gap-4">
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-milos-blue/10 to-milos-purple/10 border border-milos-blue/20 flex items-center justify-center text-milos-blue shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-milos-blue/10 to-milos-purple/10 border border-milos-blue/20 flex items-center justify-center text-milos-blue shrink-0 relative z-10 bg-[var(--bg-secondary)]">
                     {icons[i]}
                   </div>
                   {i < steps.length - 1 && (
-                    <div className="w-px flex-1 mt-3 bg-gradient-to-b from-milos-blue/30 to-transparent" />
+                    <div className="w-px flex-1 bg-milos-blue/20" />
                   )}
                 </div>
-                <div className="pb-4">
+                <div className={i < steps.length - 1 ? "pb-10" : "pb-0"}>
                   <span className="text-xs font-bold text-milos-blue">0{i + 1}</span>
                   <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold mb-2">
                     {step.title}

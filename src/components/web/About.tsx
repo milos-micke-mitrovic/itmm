@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import Image from "next/image";
+import { contacts } from "@/lib/contacts";
 
 const toolIcons: Record<string, string> = {
   "Next.js": "N",
@@ -36,7 +37,7 @@ export function About() {
 
               {/* LinkedIn placeholder */}
               <a
-                href="#"
+                href={contacts.milos.linkedin}
                 className="inline-flex items-center gap-2 mt-6 text-sm text-milos-blue hover:text-milos-blue-bright transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,8 +54,8 @@ export function About() {
             <div>
               <div className="w-48 h-48 md:w-56 md:h-56 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border)] overflow-hidden relative">
                 <Image
-                  src="/images/workspace.jpg"
-                  alt="Developer workspace"
+                  src="/images/milos.jpg"
+                  alt="Milos Mitrovic"
                   fill
                   className="object-cover"
                   sizes="224px"

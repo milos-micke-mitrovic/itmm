@@ -21,24 +21,29 @@ type Config = {
 
 function Toggle({
   label,
+  hint,
   checked,
   onChange,
 }: {
   label: string;
+  hint?: string;
   checked: boolean;
   onChange: (v: boolean) => void;
 }) {
   return (
-    <label className="flex items-center justify-between py-3 cursor-pointer group">
-      <span className="text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
-        {label}
-      </span>
+    <label className="flex items-center justify-between gap-4 py-3 cursor-pointer group">
+      <div>
+        <span className="text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
+          {label}
+        </span>
+        {hint && <p className="text-xs text-[var(--text-tertiary)] mt-0.5">{hint}</p>}
+      </div>
       <button
         type="button"
         role="switch"
         aria-checked={checked}
         onClick={() => onChange(!checked)}
-        className={`relative w-11 h-6 rounded-full transition-colors duration-200 cursor-pointer ${
+        className={`relative w-11 h-6 shrink-0 rounded-full transition-colors duration-200 cursor-pointer ${
           checked
             ? "bg-gradient-to-r from-milos-blue to-milos-purple"
             : "bg-[var(--bg-tertiary)]"
@@ -56,20 +61,23 @@ function Toggle({
 
 function Select({
   label,
+  hint,
   options,
   value,
   onChange,
 }: {
   label: string;
+  hint?: string;
   options: string[];
   value: number;
   onChange: (v: number) => void;
 }) {
   return (
     <div className="py-3">
-      <label className="text-sm text-[var(--text-secondary)] block mb-2">
+      <label className="text-sm text-[var(--text-secondary)] block mb-1">
         {label}
       </label>
+      {hint && <p className="text-xs text-[var(--text-tertiary)] mb-2">{hint}</p>}
       <div className="flex flex-wrap gap-2">
         {options.map((opt, i) => (
           <button
@@ -160,39 +168,41 @@ export function Calculator() {
           <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-primary)] p-6 md:p-8">
             <Select
               label={labels.pages}
+              hint={labels.pagesHint}
               options={options.pages}
               value={config.pages}
               onChange={(v) => set("pages", v as 0 | 1 | 2)}
             />
 
             <div className="border-t border-[var(--border)]">
-              <Toggle label={labels.gallery} checked={config.gallery} onChange={(v) => set("gallery", v)} />
+              <Toggle label={labels.gallery} hint={labels.galleryHint} checked={config.gallery} onChange={(v) => set("gallery", v)} />
             </div>
             <div className="border-t border-[var(--border)]">
-              <Toggle label={labels.contactForm} checked={config.contactForm} onChange={(v) => set("contactForm", v)} />
+              <Toggle label={labels.contactForm} hint={labels.contactFormHint} checked={config.contactForm} onChange={(v) => set("contactForm", v)} />
             </div>
             <div className="border-t border-[var(--border)]">
-              <Toggle label={labels.maps} checked={config.maps} onChange={(v) => set("maps", v)} />
+              <Toggle label={labels.maps} hint={labels.mapsHint} checked={config.maps} onChange={(v) => set("maps", v)} />
             </div>
             <div className="border-t border-[var(--border)]">
-              <Toggle label={labels.whatsapp} checked={config.whatsapp} onChange={(v) => set("whatsapp", v)} />
+              <Toggle label={labels.whatsapp} hint={labels.whatsappHint} checked={config.whatsapp} onChange={(v) => set("whatsapp", v)} />
             </div>
             <div className="border-t border-[var(--border)]">
-              <Toggle label={labels.blog} checked={config.blog} onChange={(v) => set("blog", v)} />
+              <Toggle label={labels.blog} hint={labels.blogHint} checked={config.blog} onChange={(v) => set("blog", v)} />
             </div>
             <div className="border-t border-[var(--border)]">
-              <Toggle label={labels.cms} checked={config.cms} onChange={(v) => set("cms", v)} />
+              <Toggle label={labels.cms} hint={labels.cmsHint} checked={config.cms} onChange={(v) => set("cms", v)} />
             </div>
             <div className="border-t border-[var(--border)]">
-              <Toggle label={labels.logo} checked={config.logo} onChange={(v) => set("logo", v)} />
+              <Toggle label={labels.logo} hint={labels.logoHint} checked={config.logo} onChange={(v) => set("logo", v)} />
             </div>
             <div className="border-t border-[var(--border)]">
-              <Toggle label={labels.rush} checked={config.rush} onChange={(v) => set("rush", v)} />
+              <Toggle label={labels.rush} hint={labels.rushHint} checked={config.rush} onChange={(v) => set("rush", v)} />
             </div>
 
             <div className="border-t border-[var(--border)] pt-2">
               <Select
                 label={labels.hosting}
+                hint={labels.hostingHint}
                 options={options.hosting}
                 value={config.hosting}
                 onChange={(v) => set("hosting", v as 0 | 1 | 2 | 3)}
@@ -202,6 +212,7 @@ export function Calculator() {
             <div className="border-t border-[var(--border)] pt-2">
               <Select
                 label={labels.maintenance}
+                hint={labels.maintenanceHint}
                 options={options.maintenance}
                 value={config.maintenance}
                 onChange={(v) => set("maintenance", v as 0 | 1 | 2 | 3)}

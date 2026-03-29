@@ -99,7 +99,7 @@
       ]
     },
     "portfolio": {
-      "title": "My Work",
+      "title": "Some of My Public Work",
       "viewProject": "View Project",
       "visitSite": "Visit Site",
       "projects": [
@@ -111,18 +111,34 @@
           "url": "https://vrebajpopust.rs"
         },
         {
-          "slug": "project-2",
-          "name": "Coming Soon",
-          "description": "New project in the works. Details dropping soon.",
-          "tags": [],
-          "url": "#"
+          "slug": "smart-homio",
+          "name": "SmartHomio",
+          "description": "Smart home device search engine. Find devices by platform compatibility — stop guessing if your next purchase works with your setup.",
+          "tags": ["Next.js", "Search", "AI"],
+          "url": "https://www.smarthomio.com/"
         },
         {
-          "slug": "project-3",
-          "name": "Coming Soon",
-          "description": "New project in the works. Details dropping soon.",
-          "tags": [],
-          "url": "#"
+          "slug": "try-or-bye",
+          "name": "TryOrBye",
+          "description": "AI-driven analysis of real user feedback across hundreds of digital products. Know what users actually complain about before you commit.",
+          "tags": ["Next.js", "AI", "Analytics"],
+          "url": "https://www.tryorbye.com/"
+        },
+        {
+          "slug": "algreen-konfigurator",
+          "name": "Algreen Door Configurator",
+          "description": "Interactive door configurator for Algreen. Customers pick color, glass, doorknob, spy hole — the preview image updates in real time. Built to reduce back-and-forth and speed up ordering.",
+          "tags": ["Next.js", "Configurator", "Real-time"],
+          "client": "Algreen d.o.o.",
+          "url": "https://konfigurator.algreen.rs/"
+        },
+        {
+          "slug": "jamogu",
+          "name": "JaMogu.rs",
+          "description": "Weight loss and healthy habits program for Prof. Dr. Bojko Bjelaković. Team and family packages for teens and families — built to motivate and convert.",
+          "tags": ["Next.js", "Tailwind", "Health"],
+          "client": "Prof. Dr. Bojko Bjelaković — Pediatric Cardiology Specialist",
+          "url": "https://www.jamogu.rs/"
         }
       ]
     },
@@ -246,16 +262,27 @@
       "cta": "Get an Exact Quote",
       "labels": {
         "pages": "Number of pages",
-        "gallery": "Gallery",
+        "pagesHint": "How many separate pages your site will have (e.g. Home, About, Contact)",
+        "gallery": "Photo gallery",
+        "galleryHint": "A section to showcase your photos or work in a visual grid",
         "contactForm": "Contact form",
-        "maps": "Google Maps",
+        "contactFormHint": "A form where visitors can send you messages directly from the site",
+        "maps": "Google Maps embed",
+        "mapsHint": "An interactive map on your site showing your business location",
         "whatsapp": "WhatsApp button",
-        "blog": "Blog section",
-        "cms": "CMS — edit content yourself",
+        "whatsappHint": "A button visitors can tap to message you directly on WhatsApp",
+        "blog": "Blog / News section",
+        "blogHint": "A section where you can publish articles, tips, or updates",
+        "cms": "Content management (CMS)",
+        "cmsHint": "You'll be able to edit texts, images, and posts yourself — no developer needed",
         "logo": "Logo design",
+        "logoHint": "A custom logo created for your brand from scratch",
         "rush": "Rush delivery",
+        "rushHint": "Need it faster than the standard timeline? Priority production (+30%)",
         "hosting": "Hosting package",
-        "maintenance": "Maintenance package"
+        "hostingHint": "Where your website lives on the internet — I handle all the technical setup",
+        "maintenance": "Maintenance package",
+        "maintenanceHint": "Ongoing care: updates, backups, and small changes handled for you"
       },
       "options": {
         "pages": ["1–3", "3–5", "5+"],
@@ -314,14 +341,16 @@
       "title": "What Clients Say",
       "items": [
         {
-          "quote": "Milos delivered my photography portfolio in 5 days. Clean design, fast site, exactly what I described. Best part? He actually listened to what I wanted instead of pushing his own ideas.",
-          "name": "Ana K.",
-          "type": "Photographer portfolio"
+          "quote": "Milos built the website for my weight loss program exactly how I envisioned it. Professional, fast, and he understood the medical side without me having to explain everything twice. The site brings in new patients every week.",
+          "name": "Prof. Dr. Bojko Bjelaković",
+          "type": "JaMogu.rs — Health program",
+          "image": "/images/bojko-bjelakovic.jpg"
         },
         {
-          "quote": "I needed a website for my restaurant but had no idea where to start. Milos explained everything simply, gave me a fair price, and the result looks better than restaurants charging ten times more for their sites.",
-          "name": "Dragan M.",
-          "type": "Restaurant website"
+          "quote": "We needed a door configurator that shows customers exactly what they're ordering — in real time. Milos understood the technical challenge immediately and delivered something our competitors don't have. It cut our order errors in half.",
+          "name": "Milivoje Ristić",
+          "type": "Algreen — Door configurator",
+          "image": "/images/algreen-logo.png"
         },
         {
           "quote": "What convinced me was the clear agreement before starting. I knew exactly what I was paying for. No other freelancer I talked to offered that kind of transparency. The site itself is exactly what my business needed.",

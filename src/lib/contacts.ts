@@ -2,7 +2,7 @@ export const contacts = {
   milos: {
     email: "milos.micke.mitrovic@gmail.com",
     whatsapp: "+381658869002",
-    linkedin: "#", // TODO: add real LinkedIn URL
+    linkedin: "https://www.linkedin.com/in/milos-micke-mitrovic/"
   },
   marija: {
     email: "marijamiletic993@gmail.com",

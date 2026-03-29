@@ -99,7 +99,7 @@
       ]
     },
     "portfolio": {
-      "title": "Moji radovi",
+      "title": "Neki od mojih javnih radova",
       "viewProject": "Pogledaj projekat",
       "visitSite": "Poseti sajt",
       "projects": [
@@ -111,18 +111,34 @@
           "url": "https://vrebajpopust.rs"
         },
         {
-          "slug": "project-2",
-          "name": "Uskoro",
-          "description": "Novi projekat u izradi. Detalji stižu uskoro.",
-          "tags": [],
-          "url": "#"
+          "slug": "smart-homio",
+          "name": "SmartHomio",
+          "description": "Pretraživač pametnih kućnih uređaja. Pronađite uređaje po kompatibilnosti platforme — bez nagađanja da li radi sa vašim sistemom.",
+          "tags": ["Next.js", "Search", "AI"],
+          "url": "https://www.smarthomio.com/"
         },
         {
-          "slug": "project-3",
-          "name": "Uskoro",
-          "description": "Novi projekat u izradi. Detalji stižu uskoro.",
-          "tags": [],
-          "url": "#"
+          "slug": "try-or-bye",
+          "name": "TryOrBye",
+          "description": "AI analiza pravih korisničkih utisaka za stotine digitalnih proizvoda. Saznajte na šta se korisnici žale pre nego što se obavežete.",
+          "tags": ["Next.js", "AI", "Analytics"],
+          "url": "https://www.tryorbye.com/"
+        },
+        {
+          "slug": "algreen-konfigurator",
+          "name": "Algreen konfigurator vrata",
+          "description": "Interaktivni konfigurator vrata za Algreen. Mušterije biraju boju, staklo, kvaku, špijunku — slika se menja u realnom vremenu. Napravljen da ubrza naručivanje i smanji komunikaciju.",
+          "tags": ["Next.js", "Konfigurator", "Real-time"],
+          "client": "Algreen d.o.o.",
+          "url": "https://konfigurator.algreen.rs/"
+        },
+        {
+          "slug": "jamogu",
+          "name": "JaMogu.rs",
+          "description": "Program mršavljenja i zdravih navika za prof. dr Bojka Bjelakovića. Timski i porodični paketi za tinejdžere i porodice — napravljen da motiviše i konvertuje.",
+          "tags": ["Next.js", "Tailwind", "Health"],
+          "client": "Prof. dr Bojko Bjelaković — Specijalista dečije kardiologije",
+          "url": "https://www.jamogu.rs/"
         }
       ]
     },
@@ -246,16 +262,27 @@
       "cta": "Traži tačnu ponudu",
       "labels": {
         "pages": "Broj stranica",
-        "gallery": "Galerija",
+        "pagesHint": "Koliko odvojenih stranica će vaš sajt imati (npr. Početna, O nama, Kontakt)",
+        "gallery": "Foto galerija",
+        "galleryHint": "Sekcija za prikaz vaših fotografija ili radova u vizuelnom gridu",
         "contactForm": "Kontakt forma",
-        "maps": "Google Maps",
+        "contactFormHint": "Formular preko koga vam posetioci mogu poslati poruku direktno sa sajta",
+        "maps": "Google Maps lokacija",
+        "mapsHint": "Interaktivna mapa na sajtu koja pokazuje gde se vaš posao nalazi",
         "whatsapp": "WhatsApp dugme",
-        "blog": "Blog sekcija",
-        "cms": "CMS — uređujete sadržaj sami",
+        "whatsappHint": "Dugme koje posetioci mogu da kliknu da vam pišu direktno na WhatsApp",
+        "blog": "Blog / Novosti",
+        "blogHint": "Sekcija gde možete objavljivati tekstove, savete ili vesti",
+        "cms": "Upravljanje sadržajem (CMS)",
+        "cmsHint": "Moći ćete sami da menjate tekstove, slike i objave — bez programera",
         "logo": "Dizajn logotipa",
+        "logoHint": "Logo napravljen od nule, posebno za vaš brend",
         "rush": "Hitna isporuka",
+        "rushHint": "Treba vam brže od standardnog roka? Prioritetna izrada (+30%)",
         "hosting": "Hosting paket",
-        "maintenance": "Paket održavanja"
+        "hostingHint": "Mesto gde vaš sajt živi na internetu — ja se brinem za svu tehničku stranu",
+        "maintenance": "Paket održavanja",
+        "maintenanceHint": "Briga o sajtu: ažuriranja, backup i sitne izmene — sve rešavam ja"
       },
       "options": {
         "pages": ["1–3", "3–5", "5+"],
@@ -314,14 +341,16 @@
       "title": "Šta kažu klijenti",
       "items": [
         {
-          "quote": "Miloš mi je isporučio fotografski portfolio za 5 dana. Čist dizajn, brz sajt, tačno onako kako sam zamislila. Najbolji deo? Zaista je slušao šta hoću umesto da gura svoje ideje.",
-          "name": "Ana K.",
-          "type": "Fotografski portfolio"
+          "quote": "Miloš je napravio sajt za moj program mršavljenja tačno onako kako sam zamislio. Profesionalno, brzo, i razumeo je medicinsku stranu bez da mu objašnjavam sve dva puta. Sajt mi svake nedelje dovodi nove pacijente.",
+          "name": "Prof. dr Bojko Bjelaković",
+          "type": "JaMogu.rs — Zdravstveni program",
+          "image": "/images/bojko-bjelakovic.jpg"
         },
         {
-          "quote": "Trebao mi je sajt za restoran ali nisam imao pojma odakle da počnem. Miloš je sve objasnio prosto, dao fer cenu, a rezultat izgleda bolje nego kod restorana koji su platili deset puta više za svoje sajtove.",
-          "name": "Dragan M.",
-          "type": "Sajt restorana"
+          "quote": "Trebao nam je konfigurator vrata koji mušterijama prikazuje tačno šta naručuju — u realnom vremenu. Miloš je odmah razumeo tehnički izazov i isporučio nešto što naša konkurencija nema. Greške pri naručivanju su nam prepolovljene.",
+          "name": "Milivoje Ristić",
+          "type": "Algreen — Konfigurator vrata",
+          "image": "/images/algreen-logo.png"
         },
         {
           "quote": "Ubedio me je jasan dogovor pre početka rada. Znao sam tačno za šta plaćam. Nijedan drugi frilenser sa kojim sam pričao nije ponudio takvu transparentnost. Sam sajt je tačno ono što je mom biznisu trebalo.",
